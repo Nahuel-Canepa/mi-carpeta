@@ -162,7 +162,7 @@ h2 {
     }
     .fotonatatorio {
         height: 300px; 
-        width: 200;
+        width: 400px;
         object-fit: cover;
     }
     .fotogimnasio {
@@ -737,13 +737,21 @@ grid-row: 4/1;
     background-color: #005B96;
     padding: 3vh;
 }
-.div-pagina-ubicacion {
+section {
     display: flex;
-    justify-content: space-around;
-
+    height: 50%;
 }
-.mapa-ubicacion { 
+.seccion {
+    font-size: 15px;
     display: flex;
+    flex-direction:column;
+}
+main { 
+    display: flex;
+    padding: 10px;
+    align-items: flex-end;
+    justify-content: right;
+    height: 50%;
 }
 /*Pagina Contactos*/
 .form-contacto {
