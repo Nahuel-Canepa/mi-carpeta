@@ -619,17 +619,14 @@ ul {
     }
 }
 /*Estilo de pagina Equipamentos*/
-.h1pages-equipamentos {
+main {
     display: flex;
-    align-items: start;
     background-color: #005B96;
+    width: 100%;
+    height: 100px;
     color: #fff;
     font-family: "poppins2";
-    padding: 100px;
-}
-.h2pages-equipamentos {
-    padding: 20px;
-    border: #fff;
+    justify-content: flex-start;
 }
 .grid-container {
     display: grid;
@@ -655,77 +652,7 @@ img {
 grid-column: 3/3;
 grid-row: 4/1;
 }
-@media screen and (max-width: 320px) { 
-
-    nav {
-        background-image: url(../imagenes/logo-alumni.png);
-        background-position: top;
-        background-repeat: no-repeat;
-        background-color: #009641;
-        height: 260px;
-        text-decoration: none;   
-    }
-    .h1pages-equipamentos {
-        display: block;
-        align-items: start;
-        background-color: #005B96;
-        color: #fff;
-        font-family: "poppins2";
-        padding: 30px;
-    }
-    .h2pages-equipamentos {
-        padding: 10px;
-        border: #fff;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows:repeat(3, 150px) ;
-        border: solid;
-    }
-    .grid-container .grid-item { 
-        border: solid;
-        font-size: 20px;
-        padding: 5px;
-    }
-    img { 
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-    .uno {
-        grid-column: 1/3;
-        grid-row: 1/3;
-    }
-    .dos { 
-    grid-column: 3/3;
-    grid-row: 4/1;
-    }
-    footer {
-        background-color: #009641;
-        height: 100px;
-       }
-    .img {
-        height: 30px;
-        width: 40px;
-        display: flex;
-        justify-content: end;
-       }
-    .footer {
-        list-style: none;
-        display: flex;
-        justify-content: end;
-        align-self: flex-end;
-       }
-    .linkcontactosf {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-self: center
-    }
-}
 /*Estilo pagina Ubicación*/
-
 .section-h1-ubicacion {
     background-color: #005B96;
     font-size: 22px;
