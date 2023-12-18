@@ -1,0 +1,23 @@
+footer {
+    background-color: #009641;
+    height: 100px;
+   }
+.img {
+    height: 30px;
+    width: 40px;
+    display: flex;
+    justify-content: end;
+   }
+
+.footer {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+   }
+.linkcontactosf {
+    display: block;
+    align-items: center;
+    align-content: center;
+    justify-self: center
+}

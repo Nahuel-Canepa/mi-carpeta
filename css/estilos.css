@@ -1,25 +1,315 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
-/**header**/
+
 header {
-    background-image: url(../imagenes/pileta.jpg);
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    height: 25vh;
+  background-image: url(../imagenes/pileta.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  height: 25vh;
 }
-/**Navegador**/
+
 nav {
+  background-image: url(../imagenes/logo-alumni.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #009641;
+  height: 16vh;
+  color: #fff;
+  text-decoration: none;
+}
+nav .listahori {
+  list-style: none;
+  display: flex;
+  padding: 45px;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #fff;
+}
+nav nav a:link {
+  color: rgb(255, 255, 0);
+}
+nav a {
+  text-decoration: none;
+  font-family: "poppins";
+  font-size: 20px;
+  list-style: none;
+  color: #fff;
+}
+@font-face {
+  font-family: "poppins2";
+  src: url(../Fuentes/poppins-fuentes/Poppins-Black.ttf);
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../Fuentes/poppins-fuentes/Poppins-Regular.ttf);
+}
+footer {
+  background-color: #009641;
+  height: 100px;
+}
+
+.img {
+  height: 30px;
+  width: 40px;
+  display: flex;
+  justify-content: end;
+}
+
+.footer {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-self: flex-end;
+}
+
+.linkcontactosf {
+  display: block;
+  align-items: center;
+  align-content: center;
+  justify-self: center;
+}
+
+/*inicio*/
+div .seccionh1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #005B96;
+  background-image: url(../imagenes/fachada-pileta.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+div .h1 {
+  font-family: "poppins2";
+  font-size: 30px;
+  color: #fff;
+  background-color: #005B96;
+}
+div .ph1 {
+  color: #fff;
+  padding: 20px;
+  background-color: #005B96;
+}
+div p {
+  font-family: "poppins";
+  font-size: 22px;
+}
+
+section .seccion {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+section .seccion-principal {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0%;
+}
+section h2 {
+  padding: 20px;
+  font-size: 35px;
+  font-family: "poppins2";
+}
+section .seccion-natatorio {
+  background-color: #005B96;
+  display: inline-block;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 12px;
+  color: #fff;
+}
+section .seccion-gimnasio {
+  background-color: #005B96;
+  display: inline-block;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+section .fotonatatorio {
+  height: 70vh;
+  width: 40vw;
+}
+section .fotogimnasio {
+  height: 70vh;
+  width: 40vw;
+}
+
+/*Responsive pag index*/
+@media only screen and (min-width: 320px) {
+  nav {
+    display: inline;
     background-image: url(../imagenes/logo-alumni.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #009641;
+    height: 260px;
+    text-decoration: none;
+  }
+  .listahori {
+    list-style: none;
+    padding: 45px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  .navegador-container {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    font-family: "poppins2";
+    font-size: 20px;
+    list-style: none;
+    color: #000;
+  }
+  .listahori {
+    display: block;
+  }
+  .seccionh1 {
+    display: inline-block;
+    background-image: none;
+  }
+  .seccion-principal {
+    display: inline-block;
+    padding: 5px;
+    background-image: none;
+  }
+  .seccion-natatorio {
+    background-color: #005B96;
+    display: block;
+    justify-content: center;
+    align-self: center;
+    padding: 5px;
+    border: 5px;
+  }
+  .seccion-gimnasio {
+    background-color: #005B96;
+    display: block;
+    padding: 5px;
+  }
+  .fotonatatorio {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+  }
+  .fotogimnasio {
+    object-fit: cover;
+    height: 300px;
+    width: 250px;
+  }
+}
+/**Footer**/
+footer {
+  background-color: #009641;
+  height: 100px;
+}
+
+.img {
+  height: 50px;
+  width: 60px;
+  display: flex;
+  justify-content: end;
+}
+
+.footer {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-self: flex-end;
+}
+
+.linkcontactosf {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-self: center;
+}
+
+@media only screen and (min-width: 500px) {
+  nav {
+    background-image: url(../imagenes/logo-alumni.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #009641;
+    height: 200px;
+    text-decoration: none;
+  }
+  .navegador-container {
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    font-family: "poppins2";
+    font-size: 20px;
+    list-style: none;
+    color: #000;
+  }
+  .listahori {
+    display: inline-block;
+  }
+  .seccionh1 {
+    display: inline-block;
+    background-image: none;
+  }
+  .seccion-principal {
+    display: inline-block;
+    padding: 5px;
+    background-image: none;
+  }
+  .seccion-natatorio {
+    background-color: #005B96;
+    display: block;
+    justify-content: center;
+    align-self: center;
+    padding: 5px;
+    border: 5px;
+  }
+  .seccion-gimnasio {
+    background-color: #005B96;
+    display: block;
+    padding: 5px;
+  }
+  .fotonatatorio {
+    height: 400px;
+    width: 450;
+    object-fit: cover;
+  }
+  .fotogimnasio {
+    object-fit: cover;
+    height: 350px;
+    width: 450px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  nav {
+    background-image: url(../imagenes/logo-alumni.png);
+    background-position: left;
     background-repeat: no-repeat;
     background-color: #009641;
     height: 16vh;
     color: #fff;
-    text-decoration: none;   
-}
-.listahori {
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+    font-family: "poppins2";
+    font-size: 20px;
+    list-style: none;
+    color: #fff;
+  }
+  .listahori {
     list-style: none;
     display: flex;
     padding: 45px;
@@ -27,32 +317,8 @@ nav {
     align-items: center;
     color: #fff;
     text-decoration: none;
-}
-/**Tipografias google**/
-@font-face {
-    font-family: "poppins";
-    src: url(../Fuentes/poppins-fuentes/Poppins-Regular.ttf);
-}
-/**listas**/
-a:hover {
-    color: #fff;
-}
-nav a:link { 
-    color: rgb(255, 255, 0);
-}
-a {
-    text-decoration: none;
-    font-family: "poppins";
-    font-size: 20px;
-    list-style: none;
-    color: #fff;
-}
-@font-face {
-    font-family: "poppins2";
-    src: url(../Fuentes/poppins-fuentes/Poppins-Black.ttf);
-}
-/*pagina indexx*/
-.seccionh1 {
+  }
+  .seccionh1 {
     display: flex;
     flex-direction: column;
     background-image: url(../imagenes/fachada-pileta.jpg);
@@ -61,655 +327,504 @@ a {
     background-position: right;
     background-color: #005B96;
     padding: 3vh;
-}
-.h1 {
+  }
+  .h1 {
     font-family: "poppins2";
     font-size: 35px;
     color: #fff;
-}
-.ph1 {
+  }
+  .ph1 {
     width: 65%;
     color: #fff;
-}
-p {
+  }
+  p {
     font-family: "poppins";
     font-size: 22px;
-} 
-/**section**/
-.seccion {
+  }
+  /**section**/
+  .seccion {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-}
-.seccion-principal {
+  }
+  .seccion-principal {
     display: flex;
     justify-content: space-around;
     padding: 10px;
     margin: 0%;
-}
-h2 {
+  }
+  h2 {
     padding: 20px;
     font-size: 35px;
     font-family: "poppins2";
-}
-.seccion-natatorio {
+  }
+  .seccion-natatorio {
     background-color: #005B96;
     display: inline-block;
     padding: 20px;
     align-items: center;
     justify-content: center;
     border: 12px;
-}
-.seccion-gimnasio {
+  }
+  .seccion-gimnasio {
     background-color: #005B96;
     display: inline-block;
     padding: 20px;
     align-items: center;
     justify-content: center;
-}
-.fotonatatorio {
-    height: 70vh; 
+  }
+  .fotonatatorio {
+    height: 70vh;
     width: 40vw;
-}
-.fotogimnasio {
+  }
+  .fotogimnasio {
     height: 70vh; /*50*/
     width: 40vw; /*30*/
+  }
 }
-/*Responsive pag index*/
-@media only screen and (min-width: 320px) { 
+/*actividades*/
+div .row {
+  display: flex;
+  padding: 12px;
+  flex-wrap: wrap;
+}
+div .section-h2-pagina-actividades {
+  display: inline-block;
+  flex-direction: column;
+  font-family: "poppins2";
+  padding: 12px;
+  justify-content: center;
+}
+div p {
+  font-size: 18px;
+  font-family: "poppins";
+}
+div ul {
+  font-size: 25px;
+  list-style: none;
+}
+div img {
+  display: inline-block;
+  justify-content: end;
+  height: 200px;
+  width: 250px;
+}
+div aside {
+  display: inline-block;
+  max-width: 40%;
+  background-color: #005B96;
+  padding: 12px;
+}
 
-    nav {
-        background-image: url(../imagenes/logo-alumni.png);
-        background-position: top;
-        background-repeat: no-repeat;
-        background-color: #009641;
-        height: 260px;
-        text-decoration: none;   
-    }
-    .navegador-container {
-        display: inline-block;
-}
-    a {
+/*responsive actividades*/
+@media only screen and (min-width: 320px) {
+  nav {
+    background-image: url(../imagenes/logo-alumni.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #009641;
+    height: 260px;
     text-decoration: none;
+  }
+  .row {
+    display: block;
+    justify-content: space-between;
+    padding: 12px;
+    flex-wrap: wrap;
+  }
+  .section-h2-pagina-actividades {
+    display: block;
     font-family: "poppins2";
+    padding: 12px;
+    justify-content: center;
+  }
+  p {
+    font-size: 18px;
+    font-family: "poppins";
+  }
+  ul {
+    font-size: 25px;
+    list-style: none;
+  }
+  .foto-aside-h2 {
+    display: block;
+    padding: 15px;
+    background-color: #005B96;
+    height: 300px;
+    width: 250px;
+  }
+  .section-h3-pagina-actividades {
+    display: block;
+    justify-content: center;
+    padding: 12px;
     font-size: 20px;
     list-style: none;
-    color: #000;
-}
-    .listahori {
-        display: block;
-    }
-    .seccionh1 {
-        display: inline-block;
-        background-image: none;
-    }
-    .seccion-principal {
-        display: inline-block;
-        padding: 5px;
-        background-image: none;
-    }
-    .seccion-natatorio {
-        background-color: #005B96;
-        display: block;
-        justify-content: center;
-        align-self: center;
-        padding: 5px;
-        border: 5px;
-    }
-    .seccion-gimnasio {
-        background-color: #005B96;
-        display: block;
-        padding: 5px;
-    }
-    .fotonatatorio {
-        height: 300px; 
-        width: 400px;
-        object-fit: cover;
-    }
-    .fotogimnasio {
-        object-fit: cover;
-        height: 300px; 
-        width: 250px; 
-        }
-}
-    /**Footer**/
-footer {
+    font-family: "poppins2";
+  }
+  .foto-seccion-2 {
+    display: block;
+    padding: 10px;
+    background-color: #005B96;
+    height: 300px;
+    width: 250px;
+  }
+  footer {
     background-color: #009641;
     height: 100px;
-   }
-.img {
-    height: 50px;
-    width: 60px;
+  }
+  .img {
+    height: 30px;
+    width: 40px;
     display: flex;
     justify-content: end;
-   }
-.footer {
+  }
+  .footer {
     list-style: none;
     display: flex;
     justify-content: end;
     align-self: flex-end;
-   }
-.linkcontactosf {
+  }
+  .linkcontactosf {
     display: flex;
     align-items: center;
     align-content: center;
-    justify-self: center
+    justify-self: center;
+  }
 }
 @media only screen and (min-width: 500px) {
-    nav {
-        background-image: url(../imagenes/logo-alumni.png);
-        background-position: top;
-        background-repeat: no-repeat;
-        background-color: #009641;
-        height: 200px;
-        text-decoration: none;   
-    }
-    .navegador-container {
-        display: inline-block;
-}
-    a {
+  nav {
+    background-image: url(../imagenes/logo-alumni.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #009641;
+    height: 200px;
+    text-decoration: none;
+  }
+  .navegador-container {
+    display: inline-block;
+  }
+  a {
     text-decoration: none;
     font-family: "poppins2";
     font-size: 20px;
     list-style: none;
     color: #000;
-}
-    .listahori {
-        display: inline-block;
-    }
-    .seccionh1 {
-        display: inline-block;
-        background-image: none;
-    }
-    .seccion-principal {
-        display: inline-block;
-        padding: 5px;
-        background-image: none;
-    }
-    .seccion-natatorio {
-        background-color: #005B96;
-        display: block;
-        justify-content: center;
-        align-self: center;
-        padding: 5px;
-        border: 5px;
-    }
-    .seccion-gimnasio {
-        background-color: #005B96;
-        display: block;
-        padding: 5px;
-    }
-    .fotonatatorio {
-        height: 400px; 
-        width: 450;
-        object-fit: cover;
-    }
-    .fotogimnasio {
-        object-fit: cover;
-        height: 350px; 
-        width: 450px; 
-        }
+  }
+  .listahori {
+    display: inline-block;
+  }
+  .row {
+    display: block;
+    justify-content: center;
+    padding: 12px;
+    flex-wrap: wrap;
+  }
+  .section-h2-pagina-actividades {
+    display: block;
+    font-family: "poppins2";
+    padding: 12px;
+    justify-content: center;
+  }
+  p {
+    font-size: 18px;
+    font-family: "poppins";
+  }
+  ul {
+    font-size: 25px;
+    list-style: none;
+  }
+  .foto-aside-h2 {
+    display: block;
+    padding: 15px;
+    background-color: #005B96;
+    height: 300px;
+    width: 250px;
+  }
+  .section-h3-pagina-actividades {
+    display: block;
+    justify-content: center;
+    padding: 12px;
+    font-size: 20px;
+    list-style: none;
+    font-family: "poppins2";
+  }
+  .foto-seccion-2 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #005B96;
+    height: 300px;
+    width: 250px;
+  }
+  footer {
+    background-color: #009641;
+    height: 100px;
+  }
+  .img {
+    height: 30px;
+    width: 40px;
+    display: flex;
+    justify-content: end;
+  }
+  .footer {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+  }
+  .linkcontactosf {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-self: center;
+  }
 }
 @media only screen and (min-width: 800px) {
-    nav {
-        background-image: url(../imagenes/logo-alumni.png);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-color: #009641;
-        height: 16vh;
-        color: #fff;
-        text-decoration: none;   
-    }
-    a {
-        text-decoration: none;
-        font-family: "poppins2";
-        font-size: 20px;
-        list-style: none;
-        color: #fff;
-    }
-    .listahori {
-        list-style: none;
-        display: flex;
-        padding: 45px;
-        justify-content: space-evenly;
-        align-items: center;
-        color: #fff;
-        text-decoration: none;
-    }
-    .seccionh1 {
-        display: flex;
-        flex-direction: column;
-        background-image: url(../imagenes/fachada-pileta.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: right;
-        background-color: #005B96;
-        padding: 3vh;
-    }
-    .h1 {
-        font-family: "poppins2";
-        font-size: 35px;
-        color: #fff;
-    }
-    .ph1 {
-        width: 65%;
-        color: #fff;
-    }
-    p {
-        font-family: "poppins";
-        font-size: 22px;
-    } 
-    /**section**/
-    .seccion {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
-    }
-    .seccion-principal {
-        display: flex;
-        justify-content: space-around;
-        padding: 10px;
-        margin: 0%;
-    }
-    h2 {
-        padding: 20px;
-        font-size: 35px;
-        font-family: "poppins2";
-    }
-    .seccion-natatorio {
-        background-color: #005B96;
-        display: inline-block;
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
-        border: 12px;
-    }
-    .seccion-gimnasio {
-        background-color: #005B96;
-        display: inline-block;
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-    .fotonatatorio {
-        height: 70vh; 
-        width: 40vw;
-    }
-    .fotogimnasio {
-        height: 70vh; /*50*/
-        width: 40vw; /*30*/
-}
-}
-/* Estilo de pagina actividades*/
-.row {
+  nav {
+    background-image: url(../imagenes/logo-alumni.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #009641;
+    height: 16vh;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+  }
+  a {
+    text-decoration: none;
+    font-family: "poppins";
+    font-size: 18px;
+    list-style: none;
+    color: #fff;
+  }
+  .listahori {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 30px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .row {
     display: flex;
     justify-content: space-between;
     padding: 12px;
     flex-wrap: wrap;
-}
-.section-h2-pagina-actividades {
+  }
+  .section-h2-pagina-actividades {
     display: flex;
     flex-direction: column;
     font-family: "poppins2";
-    padding: 12px;
-    justify-content: center;
-}
-p {
+    padding: 10px;
+  }
+  p {
     font-size: 18px;
     font-family: "poppins";
-}
-ul { 
-    font-size: 25px;
+  }
+  ul {
+    font-size: 18px;
     list-style: none;
-}
-.foto-aside-h2 {
+  }
+  .foto-aside-h2 {
     display: flex;
-    padding: 15px;
+    padding: 20px;
     background-color: #005B96;
     height: 300px;
-    width: 400px;
-}
-.section-h3-pagina-actividades {
+    width: 250px;
+  }
+  .section-h3-pagina-actividades {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 12px;
+    padding: 10px;
     font-size: 20px;
     list-style: none;
     font-family: "poppins2";
-}
-.foto-seccion-2 {
+  }
+  .foto-seccion-2 {
     display: flex;
-    padding: 15px;
+    padding: 20px;
     background-color: #005B96;
     height: 300px;
-    width: 400px;
+    width: 250px;
+  }
 }
-/*responsive*/
-@media only screen and (min-width: 320px) { 
-    nav {
-        background-image: url(../imagenes/logo-alumni.png);
-        background-position: top;
-        background-repeat: no-repeat;
-        background-color: #009641;
-        height: 260px;
-        text-decoration: none;   
-    }
-    .row {
-        display: block;
-        justify-content: space-between;
-        padding: 12px;
-        flex-wrap: wrap;
-    }
-    .section-h2-pagina-actividades {
-        display: block;
-        font-family: "poppins2";
-        padding: 12px;
-        justify-content: center;
-    }
-    p {
-        font-size: 18px;
-        font-family: "poppins";
-    }
-    ul { 
-        font-size: 25px;
-        list-style: none;
-    }
-    .foto-aside-h2 {
-        display: block;
-        padding: 15px;
-        background-color: #005B96;
-        height: 300px;
-        width: 250px;
-    }
-    .section-h3-pagina-actividades {
-        display: block;
-        justify-content: center;
-        padding: 12px;
-        font-size: 20px;
-        list-style: none;
-        font-family: "poppins2";
-    }
-    .foto-seccion-2 {
-        display: block;
-        padding: 10px;;
-        background-color: #005B96;
-        height: 300px;
-        width: 250px;
-    }
-    footer {
-        background-color: #009641;
-        height: 100px;
-       }
-    .img {
-        height: 30px;
-        width: 40px;
-        display: flex;
-        justify-content: end;
-       }
-    .footer {
-        list-style: none;
-        display: flex;
-        justify-content: end;
-        align-self: flex-end;
-       }
-    .linkcontactosf {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-self: center
-    }
+/*Estilo de pagina Equipamentos*/
+main {
+  display: flex;
+  background-color: #005B96;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  font-family: "poppins2";
+  justify-content: flex-start;
 }
-@media only screen and (min-width: 500px) { 
-    nav {
-        background-image: url(../imagenes/logo-alumni.png);
-        background-position: top;
-        background-repeat: no-repeat;
-        background-color: #009641;
-        height: 200px;
-        text-decoration: none;   
-    }
-    .navegador-container {
-        display: inline-block;
+
+h2 {
+  padding: 12px;
+  font-size: 30px;
 }
-    a {
+
+div {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 300px);
+  border: solid;
+}
+
+.item {
+  padding: 10px;
+  border: solid;
+}
+
+.img-item {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item-uno {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.item-dos {
+  grid-column: 3/3;
+  grid-row: 3/1;
+}
+
+/*Ubicacion*/
+section h1 {
+  font-size: 22px;
+  font-family: "poppins2";
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  background-size: contain;
+  background-position: center;
+}
+section section {
+  display: flex;
+}
+section h2 {
+  font-size: 22px;
+  display: flex;
+}
+
+/*contactos*/
+h1 {
+  font-family: "poppins";
+  background-color: #005B96;
+  color: #fff;
+}
+
+div .form-contacto {
+  background-color: #fff;
+  font-family: "poppins2";
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+div label {
+  display: block;
+  margin-bottom: 8px;
+}
+div input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+div button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+div button:hover {
+  background-color: #45a049;
+}
+
+/*responsive actividades*/
+@media only screen and (min-width: 320px) {
+  nav {
+    background-image: url(../imagenes/logo-alumni.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #009641;
+    height: 260px;
+    text-decoration: none;
+  }
+  footer {
+    background-color: #009641;
+    height: 100px;
+  }
+  .img {
+    height: 30px;
+    width: 40px;
+    display: flex;
+    justify-content: end;
+  }
+  .footer {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+  }
+  .linkcontactosf {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-self: center;
+  }
+}
+@media only screen and (min-width: 500px) {
+  nav {
+    background-image: url(../imagenes/logo-alumni.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #009641;
+    height: 200px;
+    text-decoration: none;
+  }
+  .navegador-container {
+    display: inline-block;
+  }
+  a {
     text-decoration: none;
     font-family: "poppins2";
     font-size: 20px;
     list-style: none;
     color: #000;
-}
-    .listahori {
-        display: inline-block;
-    }
-    .row {
-        display: block;
-        justify-content: center;
-        padding: 12px;
-        flex-wrap: wrap;
-    }
-    .section-h2-pagina-actividades {
-        display: block;
-        font-family: "poppins2";
-        padding: 12px;
-        justify-content: center;
-    }
-    p {
-        font-size: 18px;
-        font-family: "poppins";
-    }
-    ul { 
-        font-size: 25px;
-        list-style: none;
-    }
-    .foto-aside-h2 {
-        display: block;
-        padding: 15px;
-        background-color: #005B96;
-        height: 300px;
-        width: 250px;
-    }
-    .section-h3-pagina-actividades {
-        display: block;
-        justify-content: center;
-        padding: 12px;
-        font-size: 20px;
-        list-style: none;
-        font-family: "poppins2";
-    }
-    .foto-seccion-2 {
-        display: block;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;;
-        background-color: #005B96;
-        height: 300px;
-        width: 250px;
-    }
-    footer {
-        background-color: #009641;
-        height: 100px;
-       }
-    .img {
-        height: 30px;
-        width: 40px;
-        display: flex;
-        justify-content: end;
-       }
-    .footer {
-        list-style: none;
-        display: flex;
-        justify-content: end;
-        align-self: flex-end;
-       }
-    .linkcontactosf {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-self: center
-    }
-}
-@media only screen and (min-width: 800px) { 
-    nav {
-        background-image: url(../imagenes/logo-alumni.png);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-color: #009641;
-        height: 16vh;
-        color: #fff;
-        text-decoration: none;   
-        display: flex;
-        justify-content: right;
-    }
-    a {
-        text-decoration: none;
-        font-family: "poppins";
-        font-size: 18px;
-        list-style: none;
-        color: #fff;
-    }
-    .listahori {
-        display: flex;
-        gap: 30px;
-        list-style: none;
-        padding: 30px;
-        color: #fff;
-        text-decoration: none;
-    }
-    .row {
-        display: flex;
-        justify-content: space-between;
-        padding: 12px;
-        flex-wrap: wrap;
-    }
-    .section-h2-pagina-actividades {
-        display: flex;
-        flex-direction: column;
-        font-family: "poppins2";
-        padding: 10px;
-    }
-    p {
-        font-size: 18px;
-        font-family: "poppins";
-    }
-    ul { 
-        font-size: 18px;
-        list-style: none;
-    }
-    .foto-aside-h2 {
-        display: flex;
-        padding: 20px;
-        background-color: #005B96;
-        height: 300px;
-        width: 250px;
-    }
-    .section-h3-pagina-actividades {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px;
-        font-size: 20px;
-        list-style: none;
-        font-family: "poppins2";
-    }
-    .foto-seccion-2 {
-        display: flex;
-        padding: 20px;
-        background-color: #005B96;
-        height: 300px;
-        width: 250px;
-    }
-}
-/*Estilo de pagina Equipamentos*/
-main {
-    display: flex;
-    background-color: #005B96;
-    width: 100%;
+  }
+  .listahori {
+    display: inline-block;
+  }
+  footer {
+    background-color: #009641;
     height: 100px;
-    color: #fff;
-    font-family: "poppins2";
-    justify-content: flex-start;
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:repeat(3, 150px) ;
-    border: solid;
-}
-.grid-container .grid-item { 
-    border: solid;
-    font-size: 20px;
-    padding: 5px;
-}
-img { 
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.uno {
-    grid-column: 1/3;
-    grid-row: 1/3;
-}
-.dos { 
-grid-column: 3/3;
-grid-row: 4/1;
-}
-/*Estilo pagina Ubicación*/
-.section-h1-ubicacion {
-    background-color: #005B96;
-    font-size: 22px;
-    font-family: "poppins2";
+  }
+  .img {
+    height: 30px;
+    width: 40px;
     display: flex;
-    flex-direction: column;
-    background-size: contain;
-    background-position: center;
-    background-color: #005B96;
-    padding: 3vh;
-}
-section {
+    justify-content: end;
+  }
+  .footer {
+    list-style: none;
     display: flex;
-    height: 50%;
-}
-.seccion {
-    font-size: 15px;
+    justify-content: end;
+    align-self: flex-end;
+  }
+  .linkcontactosf {
     display: flex;
-    flex-direction:column;
+    align-items: center;
+    align-content: center;
+    justify-self: center;
+  }
 }
-main { 
-    display: flex;
-    padding: 10px;
-    align-items: flex-end;
-    justify-content: right;
-    height: 50%;
-}
-/*Pagina Contactos*/
-.form-contacto {
-    background-color: #fff;
-    font-family: "poppins2";
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
 
-  label {
-    display: block;
-    margin-bottom: 8px;
-  }
-
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-  }
-
-  button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  button:hover {
-    background-color: #45a049;
-  }
+/*# sourceMappingURL=estilos.css.map */
